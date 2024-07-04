@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>FromBoard Delivery</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <div class="header__caption">
+          <a href="/" class="header__logo logo">
+            <img
+              src="./images/icons/Logo.svg"
+              alt="FromBoard Delivery"
+              class="logo__image"
+              width="305"
+              height="74"
+              loading="lazy"
+            />
+          </a>
+          <div class="header__info">
+            <div class="header__info-description">
+              <p>Доставляем товары из заграницы в Россию</p>
+              <p>Стоимость от 550 рублей за заказ</p>
+              <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+            </div>
+            <div class="header__info-contacts">
+              <a class="header__info-contacts-link" href="tel:+78001234567"
+                >+7 (800) 123 45-67</a
+              >
+              <p>Звонки по России бесплатны</p>
+            </div>
+
+            <div class="header__burger-menu burger-menu visible-mobile">
+              <!--<input
+                class="burger-menu__input"
+                id="burger-checkbox"
+                type="checkbox"
+              />
+              <label class="burger-menu__label" for="burger-checkbox">
+                <span class="visually-hidden">Open navigation menu</span>
+              </label> -->
+              <button class="burger-menu__button" type="button">
+                <span class="visually-hidden">Open navigation menu</span>
+              </button>
+              <div class="header__burger-menu-body">
+                <div class="header__burger-menu-navigation">
+                  <ul class="header__burger-menu-list">
+                    <li class="header__burger-menu-item">
+                      <a href="/" class="header__burger-menu-link"
+                        >Калькулятор</a
+                      >
+                    </li>
+                    <li class="header__burgeritem">
+                      <a href="/" class="header__burger-menu-link">О нас</a>
+                    </li>
+                    <li class="header__burgeritem">
+                      <a href="/" class="header__burger-menu-link">Гарантии</a>
+                    </li>
+                    <li class="header__burgeritem">
+                      <a href="/" class="header__burger-menu-link">Отзывы</a>
+                    </li>
+                  </ul>
+                  <button
+                    class="header__burger-menu-button button"
+                    type="button"
+                  >
+                    Оставить заявку
+                  </button>
+                </div>
+                <div class="header__burger-menu-info">
+                  <p>Доставляем товары из заграницы в Россию</p>
+                  <p>Стоимость от 550 рублей за заказ</p>
+                  <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1¥ = 13 ₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__navigation hidden-mobile">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Калькулятор</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">О нас</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Гарантии</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__button button" type="button">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="section container">
+        <div class="section__body">
+          <div class="calculator">
+            <div class="calculator__info">
+              <header class="calculator__info-header">
+                <h1 class="calculator__title">
+                  Без проблемная доставка купленных вещей из США, Европы и Азии
+                  в Россию
+                </h1>
+                <div class="calculator__description">
+                  <p>
+                    Сэкономьте на покупках и наслаждайтесь мировыми брендами —
+                    наш сервис позволяет вам легко и удобно заказывать товары со
+                    всего мира и получать их в России
+                  </p>
+                </div>
+              </header>
+              <img
+                src="./images/illustation-1.png"
+                alt=""
+                class="calculator__image"
+                width="756"
+                height="352"
+                loading="lazy"
+              />
+            </div>
+            <div class="calculator__body">
+              <div class="calculator__body-text">
+                <h2 class="calculator__body-title">Калькулятор доставки</h2>
+                <div class="calculator__body-description">
+                  <p>
+                    Посчитайте, сколько будет стоить перевозка <br />
+                    покупки из зарубежа
+                  </p>
+                </div>
+              </div>
+              <form class="calculator__body-form grid grid--2">
+                <div class="calculator__body-field field field--big">
+                  <label for="name" class="field__label visually-hidden"
+                    >Имя</label
+                  >
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="name"
+                    name="name"
+                    placeholder="Имя"
+                  />
+                </div>
+                <div class="calculator__body-field field">
+                  <label for="email" class="field__label visually-hidden"
+                    >Почта</label
+                  >
+                  <input
+                    type="email"
+                    class="field__input"
+                    id="email"
+                    name="email"
+                    placeholder="Почта"
+                  />
+                </div>
+                <div class="calculator__body-field field">
+                  <label for="tel" class="field__label visually-hidden"
+                    >Телефон</label
+                  >
+                  <input
+                    type="tel"
+                    class="field__input"
+                    id="tel"
+                    name="tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="calculator__body-field field">
+                  <label for="square" class="field__label visually-hidden"
+                    >Общая площадь, м&#178;</label
+                  >
+                  <input
+                    type="number"
+                    class="field__input"
+                    id="square"
+                    name="square"
+                    placeholder="Общая площадь, м&#178;"
+                  />
+                </div>
+                <div class="calculator__body-field field">
+                  <label for="weight" class="field__label visually-hidden"
+                    >Вес, кг</label
+                  >
+                  <input
+                    type="number"
+                    class="field__input"
+                    id="weight"
+                    name="weight"
+                    placeholder="Вес, кг"
+                  />
+                </div>
+                <div class="calculator__body-field field">
+                  <label for="country" class="field__label visually-hidden"
+                    >Страна покупки</label
+                  >
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="country"
+                    name="country"
+                    placeholder="Страна покупки"
+                  />
+                </div>
+                <div class="calculator__body-field field">
+                  <label for="city" class="field__label visually-hidden"
+                    >Город покупки</label
+                  >
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="city"
+                    name="city"
+                    placeholder="Город покупки"
+                  />
+                </div>
+                <div class="calculator__body-field field">
+                  <label
+                    for="delivery-area"
+                    class="field__label visually-hidden"
+                    >Область доставки</label
+                  >
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="delivery-area"
+                    name="delivery-area"
+                    placeholder="Область доставки"
+                  />
+                </div>
+                <div class="calculator__body-field field">
+                  <label
+                    for="delivery-city"
+                    class="field__label visually-hidden"
+                    >Город доставки</label
+                  >
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="delivery-city"
+                    name="delivery-city"
+                    placeholder="Город доставки"
+                  />
+                </div>
+                <button class="calculator__body-button button" type="submit">
+                  Заказать расчет
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <header class="section__header">
+          <h2 class="section__title">Наши преимущества</h2>
+        </header>
+        <div class="section__body">
+          <div class="benefits">
+            <ul class="benefits__list grid grid--3">
+              <li class="benefits__item">
+                <article class="benefit-card">
+                  <img
+                    src="./images/icons/benefit-card-1.svg"
+                    alt=""
+                    class="benefit-card__image"
+                    width="113"
+                    height="113"
+                    loading="lazy"
+                  />
+                  <div class="benefit-card__body">
+                    <h3 class="benefit-card__title">Растоможка груза</h3>
+                    <div class="benefit-card__description">
+                      <p>
+                        Мы берём на себя все формальности и бумажную волокиту,
+                        связанную с растаможкой груза
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="benefits__item">
+                <article class="benefit-card">
+                  <img
+                    src="./images/icons/benefit-card-2.svg"
+                    alt=""
+                    class="benefit-card__image"
+                    width="113"
+                    height="113"
+                    loading="lazy"
+                  />
+                  <div class="benefit-card__body">
+                    <h3 class="benefit-card__title">Надежная упаковка</h3>
+                    <div class="benefit-card__description">
+                      <p>
+                        Все товары упаковываются нашими специалистами с особым
+                        вниманием к деталям, гарантируя, что они дойдут в
+                        безорасности и в отличном состоянии
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="benefits__item">
+                <article class="benefit-card">
+                  <img
+                    src="./images/icons/benefit-card-3.svg"
+                    alt=""
+                    class="benefit-card__image"
+                    width="113"
+                    height="68"
+                    loading="lazy"
+                  />
+                  <div class="benefit-card__body">
+                    <h3 class="benefit-card__title">Быстро и выгодно</h3>
+                    <div class="benefit-card__description">
+                      <p>
+                        Мы предлагаем быструю и выгодную доставку, чтобы вы
+                        смогли насладиться покупками как можно скорее
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="benefits__item">
+                <article class="benefit-card">
+                  <img
+                    src="./images/icons/benefit-card-4.svg"
+                    alt=""
+                    class="benefit-card__image"
+                    width="113"
+                    height="136"
+                    loading="lazy"
+                  />
+                  <div class="benefit-card__body">
+                    <h3 class="benefit-card__title">Удобный сервис</h3>
+                    <div class="benefit-card__description">
+                      <p>
+                        Стремимся сделать процесс доставки максимально убодным
+                        для вас, чтобы опыт остался приятным и беззаботным
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="benefits__item">
+                <article class="benefit-card">
+                  <img
+                    src="./images/icons/benefit-card-5.svg"
+                    alt=""
+                    class="benefit-card__image"
+                    width="113"
+                    height="102"
+                    loading="lazy"
+                  />
+                  <div class="benefit-card__body">
+                    <h3 class="benefit-card__title">Прозрачность работы</h3>
+                    <div class="benefit-card__description">
+                      <p>
+                        Мы предоставляем полный контроль над каждым этапом
+                        доставки, от момента заказа до момента прибытия заказа
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="benefits__item">
+                <article class="benefit-card">
+                  <img
+                    src="./images/icons/benefit-card-6.svg"
+                    alt=""
+                    class="benefit-card__image"
+                    width="113"
+                    height="102"
+                    loading="lazy"
+                  />
+                  <div class="benefit-card__body">
+                    <h3 class="benefit-card__title">Страхование груза</h3>
+                    <div class="benefit-card__description">
+                      <p>
+                        Наше страхование обеспечит полную защиту и покрытие
+                        почти все неприятные и неожиданные ситуации
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <header class="section__header">
+          <h2 class="section__title">Гарантии качества</h2>
+          <div class="section__description">
+            <p>
+              Наши гарантии качества включают в себя полный спектр документов,
+              необходимых для ввоза и вывоза товаров, а также для успешного
+              бизнеса на мировом рынке. Мы предоставляем вам надёжность и
+              уверенность
+            </p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="certificate">
+            <ul class="certificate__list grid grid--4">
+              <li class="certificate__item">
+                <article class="certificate-card">
+                  <img
+                    src="./images/certificate-1.png"
+                    alt=""
+                    class="certificate-card__image"
+                    width="366"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <p class="certificate-card__name">
+                    Свидетельство о регистрации в РФ
+                  </p>
+                </article>
+              </li>
+              <li class="certificate__item">
+                <article class="certificate-card">
+                  <img
+                    src="./images/certificate-2.png"
+                    alt=""
+                    class="certificate-card__image"
+                    width="366"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <p class="certificate-card__name">
+                    Свидетельство о регистрации в США
+                  </p>
+                </article>
+              </li>
+              <li class="certificate__item">
+                <article class="certificate-card">
+                  <img
+                    src="./images/certificate-3.png"
+                    alt=""
+                    class="certificate-card__image"
+                    width="366"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <p class="certificate-card__name">
+                    Свидетельство о регистрации в Китае
+                  </p>
+                </article>
+              </li>
+              <li class="certificate__item">
+                <article class="certificate-card">
+                  <img
+                    src="./images/certificate-4.png"
+                    alt=""
+                    class="certificate-card__image"
+                    width="366"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <p class="certificate-card__name">
+                    Свидетельство о регистрации в Великобритании
+                  </p>
+                </article>
+              </li>
+            </ul>
+            <a href="/" class="certificate__button button button--big">
+              Показать больше документов
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <header class="section__header">
+          <h2 class="section__title">Отзывы</h2>
+        </header>
+        <div class="section__body">
+          <div class="reviews">
+            <div class="reviews__button-prev swiper-button-prev">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.87 27.87C18.5969 28.1553 18.3828 28.4917 18.24 28.86C17.9399 29.5904 17.9399 30.4096 18.24 31.14C18.3828 31.5082 18.5969 31.8447 18.87 32.13L27.87 41.13C28.4349 41.6949 29.2011 42.0123 30 42.0123C30.7989 42.0123 31.5651 41.6949 32.13 41.13C32.6949 40.5651 33.0123 39.7989 33.0123 39C33.0123 38.2011 32.6949 37.4349 32.13 36.87L28.23 33H39C39.7956 33 40.5587 32.6839 41.1213 32.1213C41.6839 31.5587 42 30.7956 42 30C42 29.2043 41.6839 28.4413 41.1213 27.8787C40.5587 27.3161 39.7956 27 39 27H28.23L32.13 23.13C32.4112 22.8511 32.6344 22.5193 32.7867 22.1537C32.939 21.7881 33.0174 21.396 33.0174 21C33.0174 20.604 32.939 20.2118 32.7867 19.8463C32.6344 19.4807 32.4112 19.1489 32.13 18.87C31.8511 18.5888 31.5193 18.3656 31.1537 18.2133C30.7881 18.061 30.396 17.9826 30 17.9826C29.604 17.9826 29.2118 18.061 28.8463 18.2133C28.4807 18.3656 28.1489 18.5888 27.87 18.87L18.87 27.87ZM0 30C0 35.9334 1.75947 41.7336 5.05591 46.6671C8.35235 51.6006 13.0377 55.4457 18.5195 57.7164C24.0013 59.987 30.0333 60.5811 35.8527 59.4235C41.6721 58.266 47.0176 55.4088 51.2132 51.2132C55.4088 47.0176 58.266 41.6721 59.4235 35.8527C60.5811 30.0333 59.987 24.0013 57.7164 18.5195C55.4457 13.0377 51.6006 8.35235 46.6671 5.05591C41.7336 1.75947 35.9334 0 30 0C26.0603 0 22.1593 0.775973 18.5195 2.28361C14.8797 3.79125 11.5726 6.00104 8.78679 8.78679C3.1607 14.4129 0 22.0435 0 30ZM54 30C54 34.7467 52.5924 39.3869 49.9553 43.3337C47.3181 47.2804 43.5698 50.3566 39.1844 52.1731C34.799 53.9896 29.9734 54.4649 25.3178 53.5388C20.6623 52.6128 16.3859 50.327 13.0294 46.9706C9.67297 43.6141 7.3872 39.3377 6.46115 34.6822C5.53511 30.0266 6.01039 25.201 7.82689 20.8156C9.64339 16.4302 12.7195 12.6819 16.6663 10.0447C20.6131 7.40757 25.2532 6 30 6C36.3652 6 42.4697 8.52856 46.9706 13.0294C51.4714 17.5303 54 23.6348 54 30Z"
+                  fill="#8B5CF6"
+                />
+              </svg>
+            </div>
+            <div class="reviews__slider swiper">
+              <div class="reviews__slider-wrapper swiper-wrapper">
+                <div class="reviews__slider-item swiper-slide">
+                  <blockquote class="reviews-card">
+                    <div class="reviews-card__body">
+                      <p>
+                        Я заказала последний iPhone из США через ваш сервис, и
+                        доставка прошла быстро и без каких‑либо проблем.
+                        Гарантии качества и надёжная упаковка сделали мой опыт
+                        покупки невероятно позитивным
+                      </p>
+                    </div>
+                    <footer class="reviews-card__footer">
+                      <cite class="reviews-card__name">Анна</cite>
+                      <svg
+                        width="63"
+                        height="45"
+                        viewBox="0 0 63 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.5387 17.5893C27.5387 22.2321 26.8345 26.2202 25.426 29.5536C24.0176 33.006 22.1984 35.8036 19.9683 37.9464C17.7383 40.2083 15.2148 41.8155 12.3979 42.7679C9.46361 43.8393 6.58802 44.375 3.77112 44.375L3.77112 38.125C6.82276 38.125 9.69835 37.0536 12.3979 34.9107C14.98 32.8869 16.5059 30.0893 16.9753 26.5179C16.6232 26.6369 16.2124 26.756 15.743 26.875C15.3908 26.9941 14.98 27.1131 14.5106 27.2321C13.9237 27.3512 13.2782 27.4107 12.5739 27.4107C9.05281 27.4107 6.11854 26.0417 3.77112 23.3036C1.4237 20.6845 0.249994 17.5893 0.249993 14.0179C0.249993 10.4464 1.48239 7.29167 3.94718 4.55357C6.29459 1.93453 9.46361 0.625003 13.4542 0.625003C17.9143 0.625003 21.3767 2.29167 23.8415 5.625C26.3063 9.07738 27.5387 13.0655 27.5387 17.5893ZM62.75 17.5893C62.75 22.2321 62.0458 26.2202 60.6373 29.5536C59.2289 33.006 57.4096 35.8036 55.1796 37.9464C52.9495 40.2083 50.4261 41.8155 47.6092 42.7679C44.6749 43.8393 41.7993 44.375 38.9824 44.375L38.9824 38.125C42.034 38.125 44.9096 37.0536 47.6092 34.9107C50.1913 32.8869 51.7171 30.0893 52.1866 26.5179C51.8345 26.6369 51.4237 26.7559 50.9542 26.875C50.6021 26.994 50.1913 27.1131 49.7218 27.2321C49.135 27.3512 48.4894 27.4107 47.7852 27.4107C44.2641 27.4107 41.3298 26.0417 38.9824 23.3036C36.635 20.6845 35.4613 17.5893 35.4613 14.0179C35.4613 10.4464 36.6937 7.29167 39.1584 4.55357C41.5059 1.93453 44.6749 0.625 48.6655 0.625C53.1256 0.625 56.588 2.29166 59.0528 5.625C61.5176 9.07738 62.75 13.0655 62.75 17.5893Z"
+                          fill="#EDE9FE"
+                        />
+                      </svg>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  <blockquote class="reviews-card">
+                    <div class="reviews-card__body">
+                      <p>
+                        Я уже несколько лет заказываю дизайнерскую одежду из
+                        Франции через ваш сервис, и он меня никогда не подводил.
+                        Важно иметь надежную компанию, которая позаботится о
+                        вашем заказе и предоставит все необходимые документы для
+                        ввоза в Россию
+                      </p>
+                    </div>
+                    <footer class="reviews-card__footer">
+                      <cite class="reviews-card__name">Ольга</cite>
+                      <svg
+                        width="63"
+                        height="45"
+                        viewBox="0 0 63 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.5387 17.5893C27.5387 22.2321 26.8345 26.2202 25.426 29.5536C24.0176 33.006 22.1984 35.8036 19.9683 37.9464C17.7383 40.2083 15.2148 41.8155 12.3979 42.7679C9.46361 43.8393 6.58802 44.375 3.77112 44.375L3.77112 38.125C6.82276 38.125 9.69835 37.0536 12.3979 34.9107C14.98 32.8869 16.5059 30.0893 16.9753 26.5179C16.6232 26.6369 16.2124 26.756 15.743 26.875C15.3908 26.9941 14.98 27.1131 14.5106 27.2321C13.9237 27.3512 13.2782 27.4107 12.5739 27.4107C9.05281 27.4107 6.11854 26.0417 3.77112 23.3036C1.4237 20.6845 0.249994 17.5893 0.249993 14.0179C0.249993 10.4464 1.48239 7.29167 3.94718 4.55357C6.29459 1.93453 9.46361 0.625003 13.4542 0.625003C17.9143 0.625003 21.3767 2.29167 23.8415 5.625C26.3063 9.07738 27.5387 13.0655 27.5387 17.5893ZM62.75 17.5893C62.75 22.2321 62.0458 26.2202 60.6373 29.5536C59.2289 33.006 57.4096 35.8036 55.1796 37.9464C52.9495 40.2083 50.4261 41.8155 47.6092 42.7679C44.6749 43.8393 41.7993 44.375 38.9824 44.375L38.9824 38.125C42.034 38.125 44.9096 37.0536 47.6092 34.9107C50.1913 32.8869 51.7171 30.0893 52.1866 26.5179C51.8345 26.6369 51.4237 26.7559 50.9542 26.875C50.6021 26.994 50.1913 27.1131 49.7218 27.2321C49.135 27.3512 48.4894 27.4107 47.7852 27.4107C44.2641 27.4107 41.3298 26.0417 38.9824 23.3036C36.635 20.6845 35.4613 17.5893 35.4613 14.0179C35.4613 10.4464 36.6937 7.29167 39.1584 4.55357C41.5059 1.93453 44.6749 0.625 48.6655 0.625C53.1256 0.625 56.588 2.29166 59.0528 5.625C61.5176 9.07738 62.75 13.0655 62.75 17.5893Z"
+                          fill="#EDE9FE"
+                        />
+                      </svg>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  <blockquote class="reviews-card">
+                    <div class="reviews-card__body">
+                      <p>
+                        Заказал шикарные часы из Швейцарии, и доставка была
+                        невероятно быстрой. Ваш сервис делаает интернет-шопинг
+                        более доступным и удобным
+                      </p>
+                    </div>
+                    <footer class="reviews-card__footer">
+                      <cite class="reviews-card__name">Игорь</cite>
+                      <svg
+                        width="63"
+                        height="45"
+                        viewBox="0 0 63 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.5387 17.5893C27.5387 22.2321 26.8345 26.2202 25.426 29.5536C24.0176 33.006 22.1984 35.8036 19.9683 37.9464C17.7383 40.2083 15.2148 41.8155 12.3979 42.7679C9.46361 43.8393 6.58802 44.375 3.77112 44.375L3.77112 38.125C6.82276 38.125 9.69835 37.0536 12.3979 34.9107C14.98 32.8869 16.5059 30.0893 16.9753 26.5179C16.6232 26.6369 16.2124 26.756 15.743 26.875C15.3908 26.9941 14.98 27.1131 14.5106 27.2321C13.9237 27.3512 13.2782 27.4107 12.5739 27.4107C9.05281 27.4107 6.11854 26.0417 3.77112 23.3036C1.4237 20.6845 0.249994 17.5893 0.249993 14.0179C0.249993 10.4464 1.48239 7.29167 3.94718 4.55357C6.29459 1.93453 9.46361 0.625003 13.4542 0.625003C17.9143 0.625003 21.3767 2.29167 23.8415 5.625C26.3063 9.07738 27.5387 13.0655 27.5387 17.5893ZM62.75 17.5893C62.75 22.2321 62.0458 26.2202 60.6373 29.5536C59.2289 33.006 57.4096 35.8036 55.1796 37.9464C52.9495 40.2083 50.4261 41.8155 47.6092 42.7679C44.6749 43.8393 41.7993 44.375 38.9824 44.375L38.9824 38.125C42.034 38.125 44.9096 37.0536 47.6092 34.9107C50.1913 32.8869 51.7171 30.0893 52.1866 26.5179C51.8345 26.6369 51.4237 26.7559 50.9542 26.875C50.6021 26.994 50.1913 27.1131 49.7218 27.2321C49.135 27.3512 48.4894 27.4107 47.7852 27.4107C44.2641 27.4107 41.3298 26.0417 38.9824 23.3036C36.635 20.6845 35.4613 17.5893 35.4613 14.0179C35.4613 10.4464 36.6937 7.29167 39.1584 4.55357C41.5059 1.93453 44.6749 0.625 48.6655 0.625C53.1256 0.625 56.588 2.29166 59.0528 5.625C61.5176 9.07738 62.75 13.0655 62.75 17.5893Z"
+                          fill="#EDE9FE"
+                        />
+                      </svg>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  <blockquote class="reviews-card">
+                    <div class="reviews-card__body">
+                      <p>
+                        Ваш серсвис действительно изменил мой способ покупок. Я
+                        больше не переживаю о таможенных вопросах и документах -
+                        все у вас в порядке. Спасибо за ваше качество и
+                        надежность
+                      </p>
+                    </div>
+                    <footer class="reviews-card__footer">
+                      <cite class="reviews-card__name">Екатерина</cite>
+                      <svg
+                        width="63"
+                        height="45"
+                        viewBox="0 0 63 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.5387 17.5893C27.5387 22.2321 26.8345 26.2202 25.426 29.5536C24.0176 33.006 22.1984 35.8036 19.9683 37.9464C17.7383 40.2083 15.2148 41.8155 12.3979 42.7679C9.46361 43.8393 6.58802 44.375 3.77112 44.375L3.77112 38.125C6.82276 38.125 9.69835 37.0536 12.3979 34.9107C14.98 32.8869 16.5059 30.0893 16.9753 26.5179C16.6232 26.6369 16.2124 26.756 15.743 26.875C15.3908 26.9941 14.98 27.1131 14.5106 27.2321C13.9237 27.3512 13.2782 27.4107 12.5739 27.4107C9.05281 27.4107 6.11854 26.0417 3.77112 23.3036C1.4237 20.6845 0.249994 17.5893 0.249993 14.0179C0.249993 10.4464 1.48239 7.29167 3.94718 4.55357C6.29459 1.93453 9.46361 0.625003 13.4542 0.625003C17.9143 0.625003 21.3767 2.29167 23.8415 5.625C26.3063 9.07738 27.5387 13.0655 27.5387 17.5893ZM62.75 17.5893C62.75 22.2321 62.0458 26.2202 60.6373 29.5536C59.2289 33.006 57.4096 35.8036 55.1796 37.9464C52.9495 40.2083 50.4261 41.8155 47.6092 42.7679C44.6749 43.8393 41.7993 44.375 38.9824 44.375L38.9824 38.125C42.034 38.125 44.9096 37.0536 47.6092 34.9107C50.1913 32.8869 51.7171 30.0893 52.1866 26.5179C51.8345 26.6369 51.4237 26.7559 50.9542 26.875C50.6021 26.994 50.1913 27.1131 49.7218 27.2321C49.135 27.3512 48.4894 27.4107 47.7852 27.4107C44.2641 27.4107 41.3298 26.0417 38.9824 23.3036C36.635 20.6845 35.4613 17.5893 35.4613 14.0179C35.4613 10.4464 36.6937 7.29167 39.1584 4.55357C41.5059 1.93453 44.6749 0.625 48.6655 0.625C53.1256 0.625 56.588 2.29166 59.0528 5.625C61.5176 9.07738 62.75 13.0655 62.75 17.5893Z"
+                          fill="#EDE9FE"
+                        />
+                      </svg>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="reviews__slider-item swiper-slide">
+                  <blockquote class="reviews-card">
+                    <div class="reviews-card__body">
+                      <p>
+                        Я заказал редкий антикварный предмет из Японии через ваш
+                        серсвис, и остался впечатлен. Все пришло в отличном
+                        состоянии, и ваша гарантия качества действительно
+                        работает. Спасибо за ваше проффесиональное обслуживание
+                      </p>
+                    </div>
+                    <footer class="reviews-card__footer">
+                      <cite class="reviews-card__name">Дмитрий</cite>
+                      <svg
+                        width="63"
+                        height="45"
+                        viewBox="0 0 63 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.5387 17.5893C27.5387 22.2321 26.8345 26.2202 25.426 29.5536C24.0176 33.006 22.1984 35.8036 19.9683 37.9464C17.7383 40.2083 15.2148 41.8155 12.3979 42.7679C9.46361 43.8393 6.58802 44.375 3.77112 44.375L3.77112 38.125C6.82276 38.125 9.69835 37.0536 12.3979 34.9107C14.98 32.8869 16.5059 30.0893 16.9753 26.5179C16.6232 26.6369 16.2124 26.756 15.743 26.875C15.3908 26.9941 14.98 27.1131 14.5106 27.2321C13.9237 27.3512 13.2782 27.4107 12.5739 27.4107C9.05281 27.4107 6.11854 26.0417 3.77112 23.3036C1.4237 20.6845 0.249994 17.5893 0.249993 14.0179C0.249993 10.4464 1.48239 7.29167 3.94718 4.55357C6.29459 1.93453 9.46361 0.625003 13.4542 0.625003C17.9143 0.625003 21.3767 2.29167 23.8415 5.625C26.3063 9.07738 27.5387 13.0655 27.5387 17.5893ZM62.75 17.5893C62.75 22.2321 62.0458 26.2202 60.6373 29.5536C59.2289 33.006 57.4096 35.8036 55.1796 37.9464C52.9495 40.2083 50.4261 41.8155 47.6092 42.7679C44.6749 43.8393 41.7993 44.375 38.9824 44.375L38.9824 38.125C42.034 38.125 44.9096 37.0536 47.6092 34.9107C50.1913 32.8869 51.7171 30.0893 52.1866 26.5179C51.8345 26.6369 51.4237 26.7559 50.9542 26.875C50.6021 26.994 50.1913 27.1131 49.7218 27.2321C49.135 27.3512 48.4894 27.4107 47.7852 27.4107C44.2641 27.4107 41.3298 26.0417 38.9824 23.3036C36.635 20.6845 35.4613 17.5893 35.4613 14.0179C35.4613 10.4464 36.6937 7.29167 39.1584 4.55357C41.5059 1.93453 44.6749 0.625 48.6655 0.625C53.1256 0.625 56.588 2.29166 59.0528 5.625C61.5176 9.07738 62.75 13.0655 62.75 17.5893Z"
+                          fill="#EDE9FE"
+                        />
+                      </svg>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="reviews__pagination swiper-pagination"></div>
+            </div>
+            <div class="reviews__button-next swiper-button-next">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M41.13 27.87C41.4031 28.1553 41.6172 28.4917 41.76 28.86C42.0601 29.5904 42.0601 30.4096 41.76 31.14C41.6172 31.5082 41.4031 31.8447 41.13 32.13L32.13 41.13C31.5651 41.6949 30.7989 42.0123 30 42.0123C29.2011 42.0123 28.4349 41.6949 27.87 41.13C27.3051 40.5651 26.9877 39.7989 26.9877 39C26.9877 38.2011 27.3051 37.4349 27.87 36.87L31.77 33H21C20.2044 33 19.4413 32.6839 18.8787 32.1213C18.3161 31.5587 18 30.7956 18 30C18 29.2043 18.3161 28.4413 18.8787 27.8787C19.4413 27.3161 20.2044 27 21 27H31.77L27.87 23.13C27.5888 22.8511 27.3656 22.5193 27.2133 22.1537C27.061 21.7881 26.9826 21.396 26.9826 21C26.9826 20.604 27.061 20.2118 27.2133 19.8463C27.3656 19.4807 27.5888 19.1489 27.87 18.87C28.1489 18.5888 28.4807 18.3656 28.8463 18.2133C29.2119 18.061 29.604 17.9826 30 17.9826C30.396 17.9826 30.7882 18.061 31.1537 18.2133C31.5193 18.3656 31.8511 18.5888 32.13 18.87L41.13 27.87ZM60 30C60 35.9334 58.2405 41.7336 54.9441 46.6671C51.6476 51.6006 46.9623 55.4457 41.4805 57.7164C35.9987 59.987 29.9667 60.5811 24.1473 59.4235C18.3279 58.266 12.9824 55.4088 8.78681 51.2132C4.59124 47.0176 1.73401 41.6721 0.576458 35.8527C-0.581097 30.0333 0.0130005 24.0013 2.28363 18.5195C4.55426 13.0377 8.39944 8.35235 13.3329 5.05591C18.2664 1.75947 24.0666 0 30 0C33.9397 0 37.8407 0.775973 41.4805 2.28361C45.1203 3.79125 48.4274 6.00104 51.2132 8.78679C56.8393 14.4129 60 22.0435 60 30ZM6.00002 30C6.00002 34.7467 7.40759 39.3869 10.0447 43.3337C12.6819 47.2804 16.4302 50.3566 20.8156 52.1731C25.201 53.9896 30.0266 54.4649 34.6822 53.5388C39.3377 52.6128 43.6141 50.327 46.9706 46.9706C50.327 43.6141 52.6128 39.3377 53.5388 34.6822C54.4649 30.0266 53.9896 25.201 52.1731 20.8156C50.3566 16.4302 47.2805 12.6819 43.3337 10.0447C39.3869 7.40757 34.7468 6 30 6C23.6348 6 17.5303 8.52856 13.0294 13.0294C8.52858 17.5303 6.00002 23.6348 6.00002 30Z"
+                  fill="#8B5CF6"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--bg-light container">
+        <header class="section__header">
+          <h2 class="section__title">Остались вопросы?</h2>
+        </header>
+        <div class="section__body">
+          <div class="request">
+            <form class="request__form grid grid--2">
+              <div class="request__field field">
+                <label for="name" class="field__label visually-hidden"
+                  >Имя</label
+                >
+                <input
+                  type="text"
+                  class="field__input"
+                  id="name"
+                  name="name"
+                  placeholder="Имя"
+                />
+              </div>
+              <div class="request__field field">
+                <label for="email" class="field__label visually-hidden"
+                  >Почта</label
+                >
+                <input
+                  type="email"
+                  class="field__input"
+                  id="email"
+                  name="email"
+                  placeholder="Почта"
+                />
+              </div>
+              <div class="request__field field">
+                <label for="tel" class="field__label visually-hidden"
+                  >Телефон</label
+                >
+                <input
+                  type="tel"
+                  class="field__input"
+                  id="tel"
+                  name="tel"
+                  placeholder="Телефон"
+                />
+              </div>
+              <div class="request__field field">
+                <label for="topic" class="field__label visually-hidden"
+                  >Тема вопроса</label
+                >
+                <input
+                  type="text"
+                  class="field__input"
+                  id="topic"
+                  name="topic"
+                  placeholder="Тема вопроса"
+                />
+              </div>
+              <div class="request__field field field--big">
+                <label for="message" class="field__label visually-hidden"
+                  >Сообщение</label
+                >
+                <textarea
+                  class="field__input field__input--textarea"
+                  name="message"
+                  id="message"
+                  placeholder="Сообщение"
+                ></textarea>
+              </div>
+              <button class="request__button button" type="submit">
+                Оставить заявку
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a href="/" class="footer__menu-link">Калькулятор</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="/" class="footer__menu-link">О нас</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="/" class="footer__menu-link">Гарантии</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="/" class="footer__menu-link">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__info">
+          <a href="/" class="footer__logo logo">
+            <img
+              src="./images/icons/Logo-light.svg"
+              alt="FromBoard Delivery"
+              class="logo__image"
+              width="305"
+              height="74"
+              loading="lazy"
+            />
+          </a>
+          <div class="footer__contacts">
+            <a class="footer__contacts-link" href="tel:+78001234567"
+              >+7 (800) 123 45-67</a
+            >
+            <p>Звонки по России бесплатны</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/burger-button.js"></script>
+    <script src="./js/header__info-description.js"></script>
+  </body>
+</html>
